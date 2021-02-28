@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Mi primer sitio en tailwind </title>
+    <script src="/vector.js"></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body class=" border rounded shadow-xl container p-10 mx-auto mt-5 text-center">
+<header>
+    
+    <nav class=" pb-2 text-left text-lg text-green-700">
+        <a  button class="" href="/enlace1/">Home</a></button>
+        <a  button class="" href="/enlace1/">Shop</a></button>
+        <a  button class="" href="/enlace1/">Contacts</a></button>
+    </nav>
+    
+    <H1 class="pb-4 font text-green-900 text-opacity-60 font-mono text-4xl">The Cake Shop</H1>
+    <img src="img/cakebg.jpg" alt="">
+</header>
+
+<div>
+<h2 class=" pt-5 text-green-900 text-opacity-80 text-2xl">BEST SELLER</h2>
+<h2 class=" fontp -py-5 text-green-900 text-opacity-80 text-xl">Best food to share with everyone</h2>
+</div>
+<section class="grid grid-cols-3 gap-0 sm:gap-4 place-items-center text-green-500 font">
+  
+        <div class="pt-10  h-10/12 w-10/12"><img src="img/donuts.jpg" alt="">Donuts</div>
+        <div class="pt-10 h-10/12 w-10/12"><img src="img/cake1.jpg" alt="">Cake</div>
+        <div class=" pt-10 h-10/12 w-10/12"><img src="img/coffe.jpg" alt="">Coffe</div>
+    
+      
+    </section>
+
+
+    <div class="pt-8">
+    <hr>
+    <h2 class=" pt-5 text-green-900 text-opacity-80 text-2xl">All Menu</h2>
+
+</div>
+
+
+<section class=" grid grid-cols-2 sm:grid-cols-4 gap-0 sm:gap-4 place-items-center text-green-500 font">
+  
+        <div class="transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  p-2 sm:p-4 w-4/5  h-4/5  sm:h-full w-full "><img src="img/torta chocolate.jpg" alt="">Donuts</div>
+        <div class="transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110  p-2 sm:p-4   w-4/5  h-4/5  sm:h-full w-full"><img src="img/brownie.jpg" alt="">Cake</div>
+        <div class="transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110   p-2 sm:p-4   w-4/5  h-4/5  sm:h-full w-full"><img src="img/barquito.jpg" alt="">Coffe</div>
+        <div class=" transition duration-500 ease-in-out   transform hover:-translate-y-1 hover:scale-110   p-2 sm:p-4  w-4/5  h-4/5  sm:h-full w-full"><img src="img/torta mouse.jpg" alt="">Coffe</div>
+      
+    </section>
+
+
+
+
+
+
+
+<section class=" mt-12 grid grid-cols-4 gap-4 place-items-center font-sans">
+
+    
+ 
+    <div>
+        <ion-icon class="text-gray-600 ion-icon w-12 h-12 sm:w-20 h-20 " name="storefront-outline"></ion-icon>
+        <h3 class="font-bold text-green-600 text-xs sm:text-lg"> Envios sin cargo</h3>
+        <p class="text-xs font-semibold">8:00 a 20:00</p>
+    </div>
+
+
+
+    <div>
+        <ion-icon class="text-gray-600 ion-icon w-12 h-12 sm:w-20 h-20 " name="bag-handle-outline"></ion-icon>
+        <h3 class="font-bold text-green-600  text-xs sm:text-lg"> Envios sin cargo</h3>
+        <p class="text-xs font-semibold">8:00 a 20:00</p>
+    </div>
+
+
+    <div>
+    <ion-icon class="text-gray-600 ion-icon w-12 h-12 sm:w-20 h-20 " name="card-outline"></ion-icon>
+    <h3 class="font-bold text-green-600 text-xs sm:text-lg">Pago Seguro</h3>
+    <p class="text-xs font-semibold">Todas las tarjetas</p>
+</div>
+
+<div>
+    <ion-icon class="text-gray-600 ion-icon w-12 h-12 sm:w-20 h-20 " name="call-outline"></ion-icon>
+    <h3 class="font-bold text-green-600 text-xs sm:text-lg">Pago Seguro</h3>
+    <p class="text-xs font-semibold">Todas las tarjetas</p>
+</div>
+
+    </section>
+
+
+
+    <div class=" my-5 mx-4 h-48 bg-green-400 bg-opacity-40">
+
+
+        <H3 class=" my-2 text-green-900 text-opacity-60 font-mono text-2xl">SUBSCRIBETE</H3>
+
+        <br>
+        <p class=" p-2 text-green-900 text-opacity-60 font-mono text-sm sm:text-lg">Suscribete para nuevas noticias y
+            estar actualizado en todo momento.</p>
+
+            <input type="text" placeholder="Ingrese su Mail" class="text-center focus:outline-none focus:ring focus:border-green-300 ..." />
+        <button class="rounded p-1 bg-green-300" id="boton">Enviar</button>
+
+<script>
+
+document.getElementById("boton").addEventListener("click", function(){ //escucho (veo) un click en el bton
+            var nombre = document.getElementById("enviar").value //obtengo el valor del input "nombre"
+             document.write(nombre) 
+        });
+</script>
+
+
+    </div>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+
+    
+</body>
+
+</html>
